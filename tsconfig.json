@@ -22,5 +22,5 @@
     "sourceMap": true
   },
   "include": ["./src", "./src/global.d.ts"],
-  "exclude": ["node_modules", "./src/demo.ts"]
+  "exclude": ["node_modules", "./src/__tests__", "./src/demo.ts"]
 }
