@@ -1,0 +1,41 @@
+{
+  "name": "@restbox/sandboxer",
+  "version": "0.1.2",
+  "description": "a JavaScript sandbox for executing various security sensitive external scripts.",
+  "author": "RestBox",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "types": "./lib/",
+  "type": "module",
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "demo": "esrun src/demo.ts",
+    "test": "jest",
+    "build": "tsc -b",
+    "clean": "tsc -b --clean",
+    "postinstall": "yarn build",
+    "prepublish": "yarn build",
+    "do-build-prod": "yarn build",
+    "do-test": "yarn test"
+  },
+  "keywords": ["restbox", "sandbox", "js-sandbox", "apis", "test-runner"],
+  "dependencies": {
+    "fp-ts": "^2.11.5",
+    "lodash": "^4.17.21",
+    "quickjs-emscripten": "^0.13.0"
+  },
+  "devDependencies": {
+    "@digitak/esrun": "^1.2.8",
+    "@relmify/jest-fp-ts": "^1.1.1",
+    "@types/jest": "^27.0.2",
+    "@types/lodash": "^4.14.176",
+    "@types/node": "^16.11.7",
+    "io-ts": "^2.2.16",
+    "jest": "^27.3.1",
+    "prettier": "^2.4.1",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.4.4"
+  }
+}
